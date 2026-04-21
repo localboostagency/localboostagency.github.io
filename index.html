@@ -198,10 +198,70 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 
 .detail-cta{padding:52px 60px;background:var(--orange);}
 
+/* ═══════════ PACKAGES ═══════════ */
+.pkg-intro{font-size:15px;color:var(--muted);line-height:1.7;max-width:580px;margin-bottom:48px;}
+.pkg-tier-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#B5A898;display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+.pkg-tier-label::after{content:'';flex:1;height:1px;background:var(--border);}
+.pkg-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:40px;}
+.pkg-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:40px;}
+.pkg-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:30px 26px;position:relative;transition:border-color 0.2s,transform 0.2s;}
+.pkg-card:hover{border-color:#D4692A55;transform:translateY(-2px);}
+.pkg-card-featured{border-color:var(--orange);background:linear-gradient(160deg,#FBF0E6 0%,#fff 50%);}
+.pkg-badge{position:absolute;top:18px;right:18px;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;background:var(--orange);color:#fff;border-radius:30px;padding:4px 12px;}
+.pkg-badge-warm{background:#F0C070;color:#1A1614;}
+.pkg-icon{width:40px;height:40px;border-radius:10px;background:#FBF0E6;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:18px;}
+.pkg-tag{font-size:10px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#B5A898;margin-bottom:6px;}
+.pkg-name{font-family:'Bricolage Grotesque',sans-serif;font-size:21px;font-weight:800;color:var(--dark);letter-spacing:-0.4px;margin-bottom:6px;}
+.pkg-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:20px;}
+.pkg-price{display:flex;align-items:baseline;gap:3px;margin-bottom:20px;}
+.pkg-price-from{font-size:11px;color:#B5A898;margin-right:2px;}
+.pkg-price-amount{font-family:'Bricolage Grotesque',sans-serif;font-size:38px;font-weight:800;color:var(--dark);letter-spacing:-1.5px;line-height:1;}
+.pkg-price-period{font-size:13px;color:var(--muted);}
+.pkg-price-badge{font-size:10px;font-weight:600;letter-spacing:0.05em;background:#FBF0E6;color:#9A6A40;border-radius:30px;padding:4px 10px;margin-left:8px;position:relative;top:-4px;}
+.pkg-price-badge-monthly{background:#F0C070;color:#1A1614;}
+.pkg-divider{height:1px;background:var(--border);margin-bottom:20px;}
+.pkg-features{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:24px;}
+.pkg-features li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:#5A4A3E;line-height:1.5;}
+.pkg-check{width:18px;height:18px;border-radius:5px;background:#FBF0E6;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.pkg-check svg{width:9px;height:9px;stroke:var(--orange);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.pkg-btn{display:flex;align-items:center;justify-content:center;width:100%;padding:12px 20px;border-radius:8px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;letter-spacing:-0.2px;text-decoration:none;cursor:pointer;border:none;transition:all 0.2s;}
+.pkg-btn-primary{background:var(--dark);color:var(--cream);}
+.pkg-btn-primary:hover{background:var(--orange);}
+.pkg-btn-orange{background:var(--orange);color:#fff;}
+.pkg-btn-orange:hover{background:#BF5820;}
+.pkg-btn-outline{background:transparent;color:var(--dark);border:1.5px solid var(--border);}
+.pkg-btn-outline:hover{border-color:var(--orange);color:var(--orange);}
+.pkg-delivery{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#B5A898;margin-top:10px;}
+.pkg-custom{background:var(--dark);border-radius:16px;padding:40px 48px;display:flex;align-items:center;justify-content:space-between;gap:48px;}
+.pkg-custom-left{}
+.pkg-custom-tag{font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange-light);margin-bottom:10px;}
+.pkg-custom-title{font-family:'Bricolage Grotesque',sans-serif;font-size:30px;font-weight:800;color:var(--cream);letter-spacing:-0.8px;margin-bottom:10px;}
+.pkg-custom-desc{font-size:14px;color:rgba(247,244,239,0.5);line-height:1.65;max-width:460px;}
+.pkg-custom-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+.pkg-chip{font-size:11.5px;font-weight:500;background:rgba(247,244,239,0.07);border:1px solid rgba(247,244,239,0.12);border-radius:30px;padding:5px 13px;color:rgba(247,244,239,0.55);}
+.pkg-chip-orange{background:rgba(212,105,42,0.15);border-color:rgba(212,105,42,0.35);color:#E8A070;}
+.pkg-custom-right{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:14px;}
+.pkg-custom-price{font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:700;color:var(--orange-light);white-space:nowrap;}
+.pkg-btn-cream{background:var(--cream);color:var(--dark);white-space:nowrap;min-width:210px;}
+.pkg-btn-cream:hover{background:var(--orange);color:#fff;}
+.pkg-compare-table{background:#fff;border:1.5px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:40px;}
+.pkg-compare-header{padding:22px 32px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+.pkg-compare-header h3{font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:700;color:var(--dark);}
+.pkg-compare-legend{font-size:11px;color:#B5A898;}
+.pkg-compare-table table{width:100%;border-collapse:collapse;}
+.pkg-compare-table th,.pkg-compare-table td{padding:13px 16px;text-align:center;font-size:12.5px;border-bottom:1px solid var(--border);}
+.pkg-compare-table th{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.05em;color:#8A7A6E;background:#FBF7F3;}
+.pkg-compare-table td:first-child{text-align:left;color:var(--muted);padding-left:32px;}
+.pkg-compare-table th:first-child{text-align:left;padding-left:32px;}
+.pkg-compare-table tr:last-child td{border-bottom:none;}
+.pkg-compare-table tr:hover td{background:#FBF7F3;}
+.pkg-yes{color:var(--orange);font-weight:700;font-size:14px;}
+.pkg-no{color:#D0C8C0;font-size:16px;}
+.pkg-partial{font-size:11px;font-weight:600;color:#9A6A40;background:#FBF0E6;padding:2px 8px;border-radius:30px;}
 @media(max-width:768px){
   nav,.hero,.sec,.detail-hero,.detail-intro,.detail-steps,.detail-results,.detail-includes,.detail-cta,.founder-strip,.logos-strip,.back-bar,footer{padding-left:24px;padding-right:24px;}
   .hero-title,.detail-title{font-size:42px;}
-  .obj-grid,.res-grid,.why-grid,.cibles-grid,.step-grid,.detail-res-grid,.includes-grid{grid-template-columns:1fr;}
+  .obj-grid,.res-grid,.why-grid,.cibles-grid,.step-grid,.detail-res-grid,.includes-grid,.pkg-grid-2,.pkg-grid-3{grid-template-columns:1fr;}
   .founder-card{flex-direction:column;}
   .footer-top{flex-direction:column;gap:24px;}
   .ft-contacts{align-items:flex-start;}
@@ -216,6 +276,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
   <div class="nav-logo" onclick="showHome()">Local<span>Boost</span> Agency</div>
   <div class="nav-links">
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#services')">Services</span>
+    <span class="nav-link" onclick="showHome(); scrollToAnchor('#packages')">Packages</span>
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#resultats')">Résultats</span>
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#apropos')">À propos</span>
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#contact')">Contact</span>
@@ -430,6 +491,262 @@ footer{background:var(--dark);padding:48px 60px 32px;}
     <div class="faq-item"><div class="faq-q">Est-ce que vous sous-traitez les missions ?</div><div class="faq-a">Non. Je m'occupe personnellement de chaque mission, de A à Z. Vous avez toujours affaire au même interlocuteur — Houssam.</div></div>
     <div class="faq-item" style="border-bottom:none;"><div class="faq-q">Qu'est-ce que l'audit gratuit m'apporte concrètement ?</div><div class="faq-a">En moins de 10 minutes, vous saurez exactement où vous en êtes sur Google, ce qui bloque votre visibilité et ce qui peut être amélioré. Sans engagement, sans jargon.</div></div>
   </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PACKAGES SECTION
+════════════════════════════════════ -->
+<div class="sec sec-cream" id="packages">
+  <div class="sec-tag">Nos packages & tarifs</div>
+  <h2 class="sec-h">Choisissez votre<br><em>niveau de croissance.</em></h2>
+  <p class="pkg-intro">Des formules conçues pour les artisans, commerçants et indépendants qui veulent dominer leur zone de chalandise sur Google — du premier pas à l'accélération maximale.</p>
+
+  <!-- ONE-SHOT -->
+  <div class="pkg-tier-label">Offres One-Shot — Paiement unique</div>
+  <div class="pkg-grid-2">
+
+    <!-- AUDIT -->
+    <div class="pkg-card">
+      <div class="pkg-icon">🔍</div>
+      <div class="pkg-tag">Étape 1</div>
+      <div class="pkg-name">Audit Google</div>
+      <div class="pkg-desc">Diagnostic complet de votre présence locale. On analyse tout, on vous dit exactement quoi corriger.</div>
+      <div class="pkg-price">
+        <span class="pkg-price-amount">197</span>
+        <span class="pkg-price-period">€</span>
+        <span class="pkg-price-badge">One-Shot</span>
+      </div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Audit complet fiche Google Business Profile</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Analyse positionnement local vs concurrents</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Rapport détaillé avec plan d'action prioritaire</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>1h de restitution en visio incluse</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Livraison sous 5 jours ouvrés</li>
+      </ul>
+      <a href="mailto:contact.localboostagency@gmail.com" class="pkg-btn pkg-btn-outline">Démarrer l'audit →</a>
+      <div class="pkg-delivery">⏱ Livraison 5 jours · Sans engagement</div>
+    </div>
+
+    <!-- PACK ESSENTIEL -->
+    <div class="pkg-card pkg-card-featured">
+      <div class="pkg-badge">RECOMMANDÉ</div>
+      <div class="pkg-icon">🚀</div>
+      <div class="pkg-tag">Étape 2</div>
+      <div class="pkg-name">Pack Essentiel</div>
+      <div class="pkg-desc">Un socle solide une bonne fois pour toutes. Votre vitrine digitale opérationnelle — sans abonnement.</div>
+      <div class="pkg-price">
+        <span class="pkg-price-from">à partir de</span>
+        <span class="pkg-price-amount" style="color:var(--orange)">390</span>
+        <span class="pkg-price-period">€</span>
+        <span class="pkg-price-badge">One-Shot</span>
+      </div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Optimisation complète fiche Google Business Profile</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Création ou refonte site web optimisé SEO local</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Intégration outils automatiques (chat, réponses auto, formulaires)</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Conseils & bonnes pratiques (document récap livré)</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Livraison en 7–10 jours ouvrés</li>
+      </ul>
+      <a href="mailto:contact.localboostagency@gmail.com" class="pkg-btn pkg-btn-orange">Demander un devis →</a>
+      <div class="pkg-delivery">⏱ Livraison 7–10 jours · Pas d'abonnement</div>
+    </div>
+
+  </div>
+
+  <!-- ABONNEMENTS -->
+  <div class="pkg-tier-label">Abonnements mensuels — Déléguer & Croître</div>
+  <div class="pkg-grid-3">
+
+    <!-- STARTER -->
+    <div class="pkg-card">
+      <div class="pkg-icon">🌱</div>
+      <div class="pkg-tag">Starter</div>
+      <div class="pkg-name">Visibilité Locale</div>
+      <div class="pkg-desc">L'essentiel pour exister sur Google et garder une présence active au quotidien.</div>
+      <div class="pkg-price">
+        <span class="pkg-price-amount">150</span>
+        <span class="pkg-price-period">€/mois</span>
+        <span class="pkg-price-badge pkg-price-badge-monthly">Mensuel</span>
+      </div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Maintenance fiche Google Business</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Gestion & réponses aux avis clients</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>4 publications/mois sur la fiche</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Rapport mensuel de performance</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Support par message</li>
+      </ul>
+      <a href="mailto:contact.localboostagency@gmail.com" class="pkg-btn pkg-btn-outline">Commencer →</a>
+    </div>
+
+    <!-- GROWTH -->
+    <div class="pkg-card pkg-card-featured">
+      <div class="pkg-badge">PLUS POPULAIRE</div>
+      <div class="pkg-icon">⚡</div>
+      <div class="pkg-tag">Growth</div>
+      <div class="pkg-name">Domination Locale</div>
+      <div class="pkg-desc">Croissance active, réseaux sociaux inclus et outils IA intégrés pour accélérer.</div>
+      <div class="pkg-price">
+        <span class="pkg-price-amount" style="color:var(--orange)">490</span>
+        <span class="pkg-price-period">€/mois</span>
+        <span class="pkg-price-badge pkg-price-badge-monthly">Mensuel</span>
+      </div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Tout du Starter inclus +</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Stratégie SEO local avancée</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Gestion réseaux sociaux (2 plateformes, 8 posts/mois)</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Intégration outils IA (automatisation, réponses)</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Call stratégique mensuel</li>
+      </ul>
+      <a href="mailto:contact.localboostagency@gmail.com" class="pkg-btn pkg-btn-orange">Commencer →</a>
+    </div>
+
+    <!-- BOOST -->
+    <div class="pkg-card">
+      <div class="pkg-icon">🏆</div>
+      <div class="pkg-tag">Boost</div>
+      <div class="pkg-name">Acquisition Max</div>
+      <div class="pkg-desc">Ads Google + TikTok/Meta, contenus pro, 4 plateformes gérées pour aller loin.</div>
+      <div class="pkg-price">
+        <span class="pkg-price-from">à partir de</span>
+        <span class="pkg-price-amount">800</span>
+        <span class="pkg-price-period">€/mois</span>
+        <span class="pkg-price-badge pkg-price-badge-monthly">Mensuel</span>
+      </div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Tout du Growth inclus +</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Campagnes Google Ads locales (budget ads en sus)</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Campagnes TikTok / Meta Ads</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>3 plateformes sociales gérées</li>
+        <li><div class="pkg-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>Reporting avancé + stratégie mensuelle dédiée</li>
+      </ul>
+      <a href="mailto:contact.localboostagency@gmail.com" class="pkg-btn pkg-btn-primary">Obtenir un devis →</a>
+    </div>
+
+  </div>
+
+  <!-- SUR MESURE -->
+  <div class="pkg-tier-label" style="margin-top:8px;">Sur Mesure — Projets complexes & ambitieux</div>
+  <div class="pkg-custom">
+    <div class="pkg-custom-left">
+      <div class="pkg-custom-tag">⚙️ Personnalisé</div>
+      <div class="pkg-custom-title">Agence & Projets<br>Sur Mesure</div>
+      <div class="pkg-custom-desc">Pour les multi-établissements, projets complexes ou besoins spécifiques. On construit ensemble une solution 100% adaptée à votre situation.</div>
+      <div class="pkg-custom-chips">
+        <span class="pkg-chip pkg-chip-orange">🤖 Chatbot IA avancé</span>
+        <span class="pkg-chip pkg-chip-orange">🌐 Site web professionnel</span>
+        <span class="pkg-chip pkg-chip-orange">🛒 Boutique e-commerce</span>
+        <span class="pkg-chip pkg-chip-orange">🏢 Multi-établissements</span>
+        <span class="pkg-chip pkg-chip-orange">🔗 Intégration CRM</span>
+        <span class="pkg-chip pkg-chip-orange">🎓 Formation équipes</span>
+        <span class="pkg-chip pkg-chip-orange">🤝 White-label agence</span>
+      </div>
+    </div>
+    <div class="pkg-custom-right">
+      <div class="pkg-custom-price">Devis personnalisé</div>
+      <a href="mailto:contact.localboostagency@gmail.com" class="pkg-btn pkg-btn-cream">Discutons de votre projet →</a>
+      <div style="font-size:11px;color:rgba(247,244,239,0.3);text-align:center;">Réponse sous 24h</div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div style="margin-top:48px;">
+    <div class="pkg-tier-label">Comparatif des formules</div>
+    <div class="pkg-compare-table">
+      <div class="pkg-compare-header">
+        <h3>Ce qui est inclus dans chaque formule</h3>
+        <div class="pkg-compare-legend">✓ Inclus &nbsp;·&nbsp; — Non inclus</div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Prestation</th>
+            <th>Starter<br><span style="color:var(--orange);font-weight:400;font-size:10px;">150€/mois</span></th>
+            <th>Growth<br><span style="color:var(--orange);font-weight:400;font-size:10px;">490€/mois</span></th>
+            <th>Boost<br><span style="color:#9A6A40;font-weight:400;font-size:10px;">800€+/mois</span></th>
+            <th>Sur Mesure</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fiche Google Business</td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Gestion des avis clients</td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Publications mensuelles</td>
+            <td><span class="pkg-partial">4/mois</span></td>
+            <td><span class="pkg-partial">8/mois</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>SEO local avancé</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Réseaux sociaux</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-partial">2 plateformes</span></td>
+            <td><span class="pkg-partial">3 plateformes</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Outils IA & automatisation</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Google Ads locales</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>TikTok / Meta Ads</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Chatbot IA avancé</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Création site / boutique</td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-no">—</span></td>
+            <td><span class="pkg-yes">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
 </div>
 
 <div class="sec sec-orange" id="audit">
