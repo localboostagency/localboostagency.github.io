@@ -198,6 +198,11 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 
 .detail-cta{padding:52px 60px;background:var(--orange);}
 
+/* ═══════════ SCROLL TO TOP ═══════════ */
+#scrollTop{position:fixed;bottom:28px;right:28px;width:46px;height:46px;background:var(--orange);color:#fff;border:none;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(212,105,42,0.4);opacity:0;transform:translateY(16px);transition:opacity 0.3s,transform 0.3s;z-index:999;font-family:'Inter',sans-serif;}
+#scrollTop.visible{opacity:1;transform:translateY(0);}
+#scrollTop:hover{background:#BF5820;transform:translateY(-2px);}
+
 /* ═══════════ PACKAGES ═══════════ */
 .pkg-intro{font-size:15px;color:var(--muted);line-height:1.7;max-width:580px;margin-bottom:48px;}
 .pkg-tier-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#B5A898;display:flex;align-items:center;gap:12px;margin-bottom:20px;}
@@ -280,7 +285,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#resultats')">Résultats</span>
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#apropos')">À propos</span>
     <span class="nav-link" onclick="showHome(); scrollToAnchor('#contact')">Contact</span>
-    <button class="nav-cta" onclick="showHome(); scrollToAnchor('#audit')">Audit gratuit</button>
+    <button class="nav-cta" onclick="window.location.href='tel:+33698202872'">📞 Nous appeler</button>
   </div>
 </nav>
 
@@ -293,7 +298,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
   <div class="hero-wm">LB</div>
   <div class="hero-eyebrow">Consultant en acquisition locale · Google & IA</div>
   <h1 class="hero-title">Faites de Google<br>votre <span class="o">machine<br>à clients.</span></h1>
-  <p class="hero-desc">J'aide les artisans, commerçants et indépendants à devenir <strong>incontournables sur Google</strong> — plus d'appels, plus de devis, plus de clients locaux qualifiés.</p>
+  <p class="hero-desc">Nous aidons les artisans, commerçants et indépendants à devenir <strong>incontournables sur Google</strong> — plus d'appels, plus de devis, plus de clients locaux qualifiés.</p>
   <div class="hero-btns">
     <button class="btn-o" onclick="scrollToAnchor('#audit')">Quel est votre objectif ? <span class="btn-arr">↗</span></button>
     <button class="btn-g" onclick="scrollToAnchor('#contact')">Contactez-moi</button>
@@ -321,7 +326,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 
 <div class="sec sec-cream" id="services">
   <div class="sec-tag">Mes services</div>
-  <h2 class="sec-h">Vous avez un objectif ?<br>J'ai les <em>moyens</em> de l'atteindre.</h2>
+  <h2 class="sec-h">Vous avez un objectif ?<br>Nous avons les <em>moyens</em> de l'atteindre.</h2>
   <div class="obj-grid">
     <div class="obj-card">
       <div class="obj-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
@@ -430,9 +435,9 @@ footer{background:var(--dark);padding:48px 60px 32px;}
     <div>
       <div class="founder-nm">Houssam Andallah</div>
       <div class="founder-rl">Fondateur · LocalBoost Agency · Expert acquisition locale Google & IA</div>
-      <div class="founder-quote">« Je travaille directement avec vous — pas de sous-traitance, pas d'intermédiaire. Chaque client bénéficie d'un suivi personnalisé et d'une stratégie construite pour son marché local. Mon objectif est simple : faire de Google votre meilleur commercial. »</div>
+      <div class="founder-quote">« Nous travaillons directement avec vous — pas de sous-traitance, pas d'intermédiaire. Chaque client bénéficie d'un suivi personnalisé et d'une stratégie construite pour son marché local. Notre objectif est simple : faire de Google votre meilleur commercial. »</div>
       <div class="founder-pledges">
-        <div class="pledge"><div class="pledge-dot"></div><span>Suivi direct sans intermédiaire — vous avez toujours affaire à moi</span></div>
+        <div class="pledge"><div class="pledge-dot"></div><span>Suivi direct sans intermédiaire — vous avez toujours affaire à notre équipe</span></div>
         <div class="pledge"><div class="pledge-dot"></div><span>Intervention partout en France</span></div>
         <div class="pledge"><div class="pledge-dot"></div><span>Résultats mesurables dès les 30 premiers jours</span></div>
         <div class="pledge"><div class="pledge-dot"></div><span>Rapports clairs, pas de jargon, pas de frais cachés</span></div>
@@ -453,7 +458,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
     <div>
       <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px;display:block;"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
       <div class="why-t">Focalisé Google, pas marketing généraliste</div>
-      <div class="why-d">Je ne fais pas de réseaux sociaux ou de branding. Google local est mon seul terrain — et c'est pour ça que j'excelle.</div>
+      <div class="why-d">Nous ne faisons pas de réseaux sociaux ou de branding. Google local est notre seul terrain — et c'est pour ça que nous excellons.</div>
     </div>
     <div>
       <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px;display:block;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -486,7 +491,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
   <h2 class="sec-h" style="font-size:30px;margin-bottom:0;">Les réponses à vos <em>questions.</em></h2>
   <div style="margin-top:24px;">
     <div class="faq-item"><div class="faq-q">Combien de temps avant de voir des résultats ?</div><div class="faq-a">Les premiers résultats (appels, visibilité Maps) apparaissent généralement entre 30 et 60 jours selon le secteur et la zone. Les campagnes Google Ads génèrent des leads dès les premières semaines.</div></div>
-    <div class="faq-item"><div class="faq-q">Travaillez-vous avec des entreprises de toute la France ?</div><div class="faq-a">Oui, j'interviens partout en France — visio, téléphone et outils partagés. Aucune contrainte géographique.</div></div>
+    <div class="faq-item"><div class="faq-q">Travaillez-vous avec des entreprises de toute la France ?</div><div class="faq-a">Oui, nous intervenons partout en France — visio, téléphone et outils partagés. Aucune contrainte géographique.</div></div>
     <div class="faq-item"><div class="faq-q">Y a-t-il un engagement de durée ?</div><div class="faq-a">Non. Je propose des missions sans engagement long terme. Commencez par un audit gratuit pour évaluer le potentiel avant tout engagement.</div></div>
     <div class="faq-item"><div class="faq-q">Est-ce que vous sous-traitez les missions ?</div><div class="faq-a">Non. Je m'occupe personnellement de chaque mission, de A à Z. Vous avez toujours affaire au même interlocuteur — Houssam.</div></div>
     <div class="faq-item" style="border-bottom:none;"><div class="faq-q">Qu'est-ce que l'audit gratuit m'apporte concrètement ?</div><div class="faq-a">En moins de 10 minutes, vous saurez exactement où vous en êtes sur Google, ce qui bloque votre visibilité et ce qui peut être amélioré. Sans engagement, sans jargon.</div></div>
@@ -751,10 +756,9 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 
 <div class="sec sec-orange" id="audit">
   <h2 class="cta-t">Découvrez si Google peut devenir<br>votre meilleur commercial.</h2>
-  <p class="cta-sub">Obtenez votre audit de visibilité locale gratuit en moins de 10 minutes. Je vous indique exactement ce qui bloque et ce qui peut être amélioré — sans engagement.</p>
+  <p class="cta-sub">Obtenez votre audit de visibilité locale gratuit en moins de 10 minutes. Nous vous indiquons exactement ce qui bloque et ce qui peut être amélioré — sans engagement.</p>
   <div class="cta-btns">
     <a class="cta-b1" href="mailto:contact.localboostagency@gmail.com">Lancer mon audit gratuit →</a>
-    <a class="cta-b2" href="tel:+33698202872">+33 6 98 20 28 72</a>
   </div>
 </div>
 
@@ -765,7 +769,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
       <div class="ft-tagline">Google · IA · Acquisition locale · France entière</div>
     </div>
     <div class="ft-contacts">
-      <div class="ft-cr"><div class="ft-ico">📞</div><span>+33 6 98 20 28 72</span></div>
+      <div class="ft-cr"><div class="ft-ico">📞</div><a href="tel:+33698202872" style="color:rgba(247,244,239,0.5);text-decoration:none;">+33 6 98 20 28 72</a></div>
       <div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div>
       <div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div>
     </div>
@@ -799,7 +803,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
   <div class="detail-intro-d">83% des recherches locales se terminent par une action — appel, visite, demande de devis. Votre fiche Google Business Profile est la première chose que vos clients voient. Une fiche mal optimisée, c'est des clients perdus au profit de vos concurrents chaque jour. Je prends en charge la création ou la refonte complète de votre fiche, avec une stratégie SEO local précise pour dominer votre zone géographique.</div>
 </div>
 <div class="detail-steps">
-  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que je fais pour vous</div>
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que nous faisons pour vous</div>
   <div class="step-grid">
     <div class="step-card"><div class="step-n">01</div><div class="step-t">Création & configuration complète</div><div class="step-d">Ouverture ou récupération de la fiche, vérification, paramétrage de toutes les informations essentielles avec précision.</div></div>
     <div class="step-card"><div class="step-n">02</div><div class="step-t">Optimisation SEO locale</div><div class="step-d">Sélection des catégories stratégiques, mots-clés locaux dans la description, attributs différenciants activés.</div></div>
@@ -831,10 +835,10 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 </div>
 <div class="detail-cta">
   <h2 class="cta-t" style="font-size:34px;">Prêt à dominer<br>votre zone sur Google ?</h2>
-  <p class="cta-sub">Demandez votre audit gratuit — je vous dis exactement où vous en êtes et ce qui peut être amélioré en 48h.</p>
+  <p class="cta-sub">Demandez votre audit gratuit — nous vous disons exactement où vous en êtes et ce qui peut être amélioré en 48h.</p>
   <div class="cta-btns"><a class="cta-b1" href="mailto:contact.localboostagency@gmail.com">Demander mon audit gratuit →</a><button class="cta-b2" onclick="showHome()">← Retour aux services</button></div>
 </div>
-<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><span>+33 6 98 20 28 72</span></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
+<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><a href="tel:+33698202872" style="color:rgba(247,244,239,0.5);text-decoration:none;">+33 6 98 20 28 72</a></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
 </div>
 
 
@@ -858,7 +862,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
   <div class="detail-intro-d">La plupart des sites vitrine échouent pour une raison simple : ils sont conçus pour plaire, pas pour convertir. Je construis des sites dont chaque élément — structure, textes, boutons, vitesse — est pensé pour qu'un visiteur passe à l'action. Couplé à un SEO local solide, votre site devient votre commercial le plus efficace, actif 24h/24.</div>
 </div>
 <div class="detail-steps">
-  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que je fais pour vous</div>
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que nous faisons pour vous</div>
   <div class="step-grid">
     <div class="step-card"><div class="step-n">01</div><div class="step-t">Design professionnel responsive</div><div class="step-d">Interface moderne, lisible sur mobile, tablette et desktop. Premier aperçu impeccable pour vos visiteurs.</div></div>
     <div class="step-card"><div class="step-n">02</div><div class="step-t">Structure SEO local dès la conception</div><div class="step-d">Balises, pages de service géolocalisées, maillage interne, balisage schema.org — pensé pour Google dès le départ.</div></div>
@@ -890,10 +894,10 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 </div>
 <div class="detail-cta">
   <h2 class="cta-t" style="font-size:34px;">Un site qui travaille<br>pour vous, 24h/24.</h2>
-  <p class="cta-sub">Discutons de votre projet. Je vous montre concrètement ce que votre site actuel rate et comment y remédier.</p>
+  <p class="cta-sub">Discutons de votre projet. Nous vous montrons concrètement ce que votre site actuel rate et comment y remédier.</p>
   <div class="cta-btns"><a class="cta-b1" href="mailto:contact.localboostagency@gmail.com">Discuter de mon projet →</a><button class="cta-b2" onclick="showHome()">← Retour aux services</button></div>
 </div>
-<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><span>+33 6 98 20 28 72</span></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
+<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><a href="tel:+33698202872" style="color:rgba(247,244,239,0.5);text-decoration:none;">+33 6 98 20 28 72</a></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
 </div>
 
 
@@ -917,7 +921,7 @@ footer{background:var(--dark);padding:48px 60px 32px;}
   <div class="detail-intro-d">Contrairement au SEO qui prend du temps, Google Ads génère des leads qualifiés dès les premières 48 heures. Je crée et pilote vos campagnes avec un objectif unique : maximiser le nombre d'appels et de demandes de devis dans votre zone géographique, avec le budget le plus efficace possible. Pas de gaspillage, que du résultat mesurable.</div>
 </div>
 <div class="detail-steps">
-  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que je fais pour vous</div>
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que nous faisons pour vous</div>
   <div class="step-grid">
     <div class="step-card"><div class="step-n">01</div><div class="step-t">Audit & stratégie de campagne</div><div class="step-d">Analyse de votre marché local, de vos concurrents et définition des mots-clés à fort potentiel de conversion.</div></div>
     <div class="step-card"><div class="step-n">02</div><div class="step-t">Ciblage géographique précis</div><div class="step-d">Rayon, ville, code postal — vos annonces s'affichent uniquement dans votre zone d'intervention.</div></div>
@@ -949,10 +953,10 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 </div>
 <div class="detail-cta">
   <h2 class="cta-t" style="font-size:34px;">Des leads qualifiés<br>dès les 48 premières heures.</h2>
-  <p class="cta-sub">Discutons de votre secteur et de votre zone. Je vous dis combien de prospects vous pouvez générer avec votre budget.</p>
+  <p class="cta-sub">Discutons de votre secteur et de votre zone. Nous vous disons combien de prospects vous pouvez générer avec votre budget.</p>
   <div class="cta-btns"><a class="cta-b1" href="mailto:contact.localboostagency@gmail.com">Estimer mon potentiel →</a><button class="cta-b2" onclick="showHome()">← Retour aux services</button></div>
 </div>
-<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><span>+33 6 98 20 28 72</span></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
+<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><a href="tel:+33698202872" style="color:rgba(247,244,239,0.5);text-decoration:none;">+33 6 98 20 28 72</a></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
 </div>
 
 
@@ -973,10 +977,10 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 </div>
 <div class="detail-intro">
   <div class="detail-intro-t">Votre acquisition, en pilote automatique</div>
-  <div class="detail-intro-d">La majorité des prospects locaux ne rappellent pas si vous ne répondez pas dans l'heure. Avec un système automatisé, chaque visiteur est accueilli, qualifié et relancé sans intervention humaine. Chatbot IA, devis instantanés, emails de relance, CRM centralisé — je mets en place l'infrastructure complète pour qu'aucun lead ne passe entre les mailles du filet.</div>
+  <div class="detail-intro-d">La majorité des prospects locaux ne rappellent pas si vous ne répondez pas dans l'heure. Avec un système automatisé, chaque visiteur est accueilli, qualifié et relancé sans intervention humaine. Chatbot IA, devis instantanés, emails de relance, CRM centralisé — nous mettons en place l'infrastructure complète pour qu'aucun lead ne passe entre les mailles du filet.</div>
 </div>
 <div class="detail-steps">
-  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que je fais pour vous</div>
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que nous faisons pour vous</div>
   <div class="step-grid">
     <div class="step-card"><div class="step-n">01</div><div class="step-t">Chatbot IA sur votre site</div><div class="step-d">Assistant intelligent qui répond aux questions fréquentes, qualifie les visiteurs et collecte leurs coordonnées 24/7.</div></div>
     <div class="step-card"><div class="step-n">02</div><div class="step-t">Devis automatisés en ligne</div><div class="step-d">Formulaire intelligent avec calcul automatique du prix, envoi instantané du devis et notification immédiate.</div></div>
@@ -1008,12 +1012,14 @@ footer{background:var(--dark);padding:48px 60px 32px;}
 </div>
 <div class="detail-cta">
   <h2 class="cta-t" style="font-size:34px;">Ne ratez plus<br>aucun prospect.</h2>
-  <p class="cta-sub">Je mets en place votre système d'acquisition automatisé en moins de 2 semaines. Discutons de votre situation actuelle.</p>
+  <p class="cta-sub">Nous mettons en place votre système d'acquisition automatisé en moins de 2 semaines. Discutons de votre situation actuelle.</p>
   <div class="cta-btns"><a class="cta-b1" href="mailto:contact.localboostagency@gmail.com">Automatiser mon acquisition →</a><button class="cta-b2" onclick="showHome()">← Retour aux services</button></div>
 </div>
-<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><span>+33 6 98 20 28 72</span></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
+<footer><div class="footer-top"><div><div class="ft-logo" onclick="showHome()">Local<span>Boost</span> Agency</div><div class="ft-tagline">Google · IA · Acquisition locale · France entière</div></div><div class="ft-contacts"><div class="ft-cr"><div class="ft-ico">📞</div><a href="tel:+33698202872" style="color:rgba(247,244,239,0.5);text-decoration:none;">+33 6 98 20 28 72</a></div><div class="ft-cr"><div class="ft-ico">✉</div><span>contact.localboostagency@gmail.com</span></div><div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div></div></div><div class="footer-bot"><div class="ft-copy">© 2025 LocalBoost Agency · Houssam Andallah</div><div class="ft-links"><a class="ft-link" href="#">Mentions légales</a><a class="ft-link" href="#">Confidentialité</a></div></div></footer>
 </div>
 
+
+<button id="scrollTop" onclick="goTop()" title="Retour en haut">↑</button>
 
 <script>
 function goTop() {
@@ -1037,6 +1043,16 @@ function scrollToAnchor(anchor) {
     if(el) el.scrollIntoView({behavior:'smooth'});
   }, 100);
 }
+
+// Scroll to top button visibility
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTop');
+  if(window.scrollY > 400) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
 </script>
 </body>
 </html>
