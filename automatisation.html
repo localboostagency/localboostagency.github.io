@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatisation & Acquisition Client — LocalBoost Agency</title>
+<meta name="description" content="Chatbot IA, devis automatiques, relances email/SMS — un système complet qui capture vos prospects 24h/24 sans intervention humaine.">
+<link rel="canonical" href="https://localboostagency.fr/automatisation.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--dark:#1A1614;--orange:#D4692A;--cream:#F7F4EF;--border:#E5E0D8;--muted:#8A7A6E;}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--dark);}
+nav{background:var(--cream);padding:15px 60px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+.nav-logo{font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:800;color:var(--dark);letter-spacing:-0.5px;text-decoration:none;}
+.nav-logo span{color:var(--orange);}
+.nav-back{font-size:13px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--dark);}
+.nav-cta{font-size:13px;font-weight:600;background:var(--dark);color:var(--cream);border-radius:30px;padding:10px 22px;text-decoration:none;}
+.hero{background:var(--dark);padding:72px 60px 60px;position:relative;overflow:hidden;}
+.hero-wm{position:absolute;right:-10px;bottom:-40px;font-family:'Bricolage Grotesque',sans-serif;font-size:160px;font-weight:800;color:rgba(255,255,255,0.025);line-height:1;letter-spacing:-8px;user-select:none;pointer-events:none;}
+.hero-num{font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(212,105,42,0.7);margin-bottom:14px;}
+.hero-title{font-family:'Bricolage Grotesque',sans-serif;font-size:56px;font-weight:800;color:var(--cream);line-height:1.0;letter-spacing:-2px;margin-bottom:16px;}
+.hero-title em{color:var(--orange);font-style:normal;}
+.hero-sub{font-size:15px;font-weight:300;color:rgba(247,244,239,0.5);line-height:1.7;max-width:520px;}
+.sec{padding:52px 60px;}
+.sec-white{background:#fff;}
+.sec-cream{background:var(--cream);}
+.sec-dark{background:var(--dark);}
+.sec-orange{background:var(--orange);}
+.sec-h{font-family:'Bricolage Grotesque',sans-serif;font-size:28px;font-weight:800;color:var(--dark);letter-spacing:-0.8px;margin-bottom:14px;}
+.sec-h-light{color:var(--cream);}
+.sec-sub{font-size:15px;color:var(--muted);line-height:1.8;max-width:640px;margin-bottom:36px;}
+.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.step-card{background:var(--cream);border-radius:12px;padding:24px 22px;}
+.step-n{font-family:'Bricolage Grotesque',sans-serif;font-size:32px;font-weight:800;color:#E8D8C4;line-height:1;margin-bottom:10px;}
+.step-t{font-size:14px;font-weight:600;color:var(--dark);margin-bottom:6px;}
+.step-d{font-size:12.5px;color:var(--muted);line-height:1.65;}
+.res-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+.res-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:20px 18px;}
+.res-n{font-family:'Bricolage Grotesque',sans-serif;font-size:36px;font-weight:800;color:var(--orange);line-height:1;margin-bottom:6px;}
+.res-l{font-size:13px;font-weight:500;color:var(--cream);margin-bottom:4px;}
+.res-d{font-size:11px;color:rgba(247,244,239,0.35);line-height:1.5;}
+.includes-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:24px;}
+.inc-item{display:flex;align-items:flex-start;gap:12px;background:#fff;border-radius:10px;padding:16px 18px;}
+.inc-check{width:22px;height:22px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.inc-check svg{width:11px;height:11px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.inc-t{font-size:13px;font-weight:500;color:var(--dark);}
+.inc-d{font-size:12px;color:var(--muted);margin-top:3px;}
+.cta-t{font-family:'Bricolage Grotesque',sans-serif;font-size:34px;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1.05;margin-bottom:10px;}
+.cta-sub{font-size:13px;font-weight:300;color:rgba(255,255,255,0.7);line-height:1.65;margin-bottom:26px;max-width:400px;}
+.cta-btns{display:flex;gap:10px;flex-wrap:wrap;}
+.cta-b1{background:#fff;color:var(--orange);border:none;border-radius:6px;padding:13px 22px;font-size:13px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;}
+.cta-b2{background:transparent;color:rgba(255,255,255,0.65);border:1px solid rgba(255,255,255,0.3);border-radius:6px;padding:13px 20px;font-size:13px;font-family:'Inter',sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;}
+footer{background:var(--dark);padding:36px 60px 28px;}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid rgba(247,244,239,0.08);}
+.ft-logo{font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:800;color:var(--cream);letter-spacing:-0.5px;margin-bottom:6px;text-decoration:none;display:block;}
+.ft-logo span{color:var(--orange);}
+.ft-tagline{font-size:12px;color:rgba(247,244,239,0.3);font-weight:300;}
+.ft-contacts{display:flex;flex-direction:column;gap:10px;align-items:flex-end;}
+.ft-cr{display:flex;align-items:center;gap:9px;font-size:12px;color:rgba(247,244,239,0.5);}
+.ft-ico{width:26px;height:26px;border-radius:6px;background:rgba(247,244,239,0.07);border:1px solid rgba(247,244,239,0.1);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;}
+.footer-bot{display:flex;justify-content:space-between;align-items:center;}
+.ft-copy{font-size:11px;color:rgba(247,244,239,0.2);}
+.ft-links{display:flex;gap:16px;}
+.ft-link{font-size:11px;color:rgba(247,244,239,0.25);text-decoration:none;}
+@media(max-width:768px){nav,.hero,.sec,footer{padding-left:24px;padding-right:24px;} .hero-title{font-size:38px;} .step-grid,.res-grid,.includes-grid{grid-template-columns:1fr;} .footer-top{flex-direction:column;gap:20px;} .ft-contacts{align-items:flex-start;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Local<span>Boost</span> Agency</a>
+  <a class="nav-back" href="index.html">← Retour aux services</a>
+  <a class="nav-cta" href="mailto:contact@localboostagency.fr?subject=Automatisation%20%26%20acquisition%20client">Démarrer →</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-wm">AUTO</div>
+  <div class="hero-num">Service 04 · Automatisation</div>
+  <h1 class="hero-title">Automatisation<br><em>& suivi</em></h1>
+  <p class="hero-sub">Un système complet qui capture, qualifie et relance vos prospects automatiquement — pour ne rater aucune opportunité, même la nuit ou le week-end.</p>
+</div>
+
+<div class="sec sec-white">
+  <div class="sec-h">Votre acquisition, en pilote automatique</div>
+  <p class="sec-sub">La majorité des prospects locaux ne rappellent pas si vous ne répondez pas dans l'heure. Avec un système automatisé, chaque visiteur est accueilli, qualifié et relancé sans intervention humaine. Chatbot IA, devis instantanés, emails de relance, CRM centralisé — nous mettons en place l'infrastructure complète pour qu'aucun lead ne passe entre les mailles du filet.</p>
+
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;margin-bottom:20px;">Ce que nous faisons pour vous</div>
+  <div class="step-grid">
+    <div class="step-card"><div class="step-n">01</div><div class="step-t">Chatbot IA sur votre site</div><div class="step-d">Assistant intelligent qui répond aux questions fréquentes, qualifie les visiteurs et collecte leurs coordonnées 24h/24, 7j/7.</div></div>
+    <div class="step-card"><div class="step-n">02</div><div class="step-t">Devis automatisés en ligne</div><div class="step-d">Formulaire intelligent avec calcul automatique du prix, envoi instantané du devis et notification immédiate pour vous.</div></div>
+    <div class="step-card"><div class="step-n">03</div><div class="step-t">Relances email & SMS</div><div class="step-d">Séquences de suivi automatiques pour les prospects qui n'ont pas encore donné suite à une demande de devis ou de contact.</div></div>
+    <div class="step-card"><div class="step-n">04</div><div class="step-t">Centralisation des leads</div><div class="step-d">Toutes les demandes (formulaire, chatbot, appel, Maps) centralisées dans un tableau de bord unique et clair.</div></div>
+    <div class="step-card"><div class="step-n">05</div><div class="step-t">Tunnel de conversion</div><div class="step-d">Parcours optimisé du visiteur à la prise de rendez-vous, sans friction, avec relances programmées à chaque étape.</div></div>
+    <div class="step-card"><div class="step-n">06</div><div class="step-t">Reporting & optimisation</div><div class="step-d">Tableau de bord mensuel clair avec taux de conversion, coût par lead et recommandations d'amélioration concrètes.</div></div>
+  </div>
+</div>
+
+<div class="sec sec-dark">
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--cream);letter-spacing:-0.6px;margin-bottom:6px;">Résultats observés</div>
+  <div style="font-size:13px;color:rgba(247,244,239,0.4);margin-bottom:24px;">Après mise en place du système complet</div>
+  <div class="res-grid">
+    <div class="res-card"><div class="res-n">0</div><div class="res-l">Lead manqué</div><div class="res-d">Chaque demande est capturée et traitée automatiquement, 24h/24</div></div>
+    <div class="res-card"><div class="res-n">×3</div><div class="res-l">Devis envoyés</div><div class="res-d">Augmentation des devis grâce à la qualification et relance automatique</div></div>
+    <div class="res-card"><div class="res-n">24/7</div><div class="res-l">Disponibilité</div><div class="res-d">Votre acquisition ne s'arrête jamais, week-ends et nuits inclus</div></div>
+  </div>
+</div>
+
+<div class="sec sec-cream">
+  <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;color:var(--dark);letter-spacing:-0.6px;">Ce qui est inclus</div>
+  <div class="includes-grid">
+    <div class="inc-item"><div class="inc-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div><div><div class="inc-t">Chatbot IA configuré</div><div class="inc-d">Entraîné sur votre activité et vos FAQ spécifiques</div></div></div>
+    <div class="inc-item"><div class="inc-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div><div><div class="inc-t">Formulaire de devis intelligent</div><div class="inc-d">Calcul automatique + envoi instantané au prospect</div></div></div>
+    <div class="inc-item"><div class="inc-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div><div><div class="inc-t">Séquences de relance email/SMS</div><div class="inc-d">3 à 5 touchpoints automatiques post-demande</div></div></div>
+    <div class="inc-item"><div class="inc-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div><div><div class="inc-t">CRM centralisé</div><div class="inc-d">Vue unifiée de tous vos prospects et demandes</div></div></div>
+    <div class="inc-item"><div class="inc-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div><div><div class="inc-t">Tunnel de conversion optimisé</div><div class="inc-d">Parcours sans friction de la visite au rendez-vous</div></div></div>
+    <div class="inc-item"><div class="inc-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div><div><div class="inc-t">Dashboard de reporting</div><div class="inc-d">Métriques clés accessibles en temps réel</div></div></div>
+  </div>
+</div>
+
+<div class="sec sec-orange">
+  <h2 class="cta-t">Ne ratez plus<br>aucun prospect.</h2>
+  <p class="cta-sub">Nous mettons en place votre système d'acquisition automatisé en moins de 2 semaines. Discutons de votre situation actuelle.</p>
+  <div class="cta-btns">
+    <a class="cta-b1" href="mailto:contact@localboostagency.fr?subject=Automatiser%20mon%20acquisition%20client">Automatiser mon acquisition →</a>
+    <a class="cta-b2" href="index.html">← Retour aux services</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <a class="ft-logo" href="index.html">Local<span>Boost</span> Agency</a>
+      <div class="ft-tagline">Google · IA · Acquisition locale · France entière</div>
+    </div>
+    <div class="ft-contacts">
+      <div class="ft-cr"><div class="ft-ico">📞</div><span>+33 6 98 20 28 72</span></div>
+      <div class="ft-cr"><div class="ft-ico">✉</div><span>contact@localboostagency.fr</span></div>
+      <div class="ft-cr"><div class="ft-ico">🇫🇷</div><span>Partout en France</span></div>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div class="ft-copy">© 2026 LocalBoost Agency · Houssam Andallah</div>
+    <div class="ft-links">
+      <a class="ft-link" href="mentions-legales.html">Mentions légales</a>
+      <a class="ft-link" href="confidentialite.html">Confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
